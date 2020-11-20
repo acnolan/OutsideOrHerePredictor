@@ -188,7 +188,11 @@ def predictFromTree(df, tree):
     print(test_features)
 
     predictions = tree.predict(test_features)
-    print(predictions)
+    print("Prediction: ",predictions)
+    if predictions[0] == 1:
+        print("Outside")
+    else:
+        print("Here")
 
 
     return
